@@ -95,6 +95,33 @@ main{
     justify-content: space-around;
 }
 
+/* TABLE */
+table, td, th {
+    border: 1px solid black;
+ }
+table {
+    border-collapse: collapse;
+    width: 500px;
+}
+th{
+    height: 70px;
+} 
+.copa-america-table h2{
+    margin-left: 30px;
+}
+.copa-america-tables{
+    display: flex;
+    justify-content: space-around;
+}
+
+.copa-america-table{
+    margin-top: 100px;
+}
+
+
+
+
+
 /* FOOTER PART */
 
 footer{
@@ -116,4 +143,52 @@ footer{
 .details img{
     width: 483.87px;
     height: 110px;
+}
+
+
+
+
+@media only screen and (max-width:688px) {
+    .thumnail, .players-templete, .form{
+        width: 100%;
+        height: 100%;
+    }
+    .thumnail-parts{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .thumnail-part{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .thumnail-banner img{
+        width: 100%;
+    }
+    .thumnail-banner{
+        margin-right: 0px;
+        margin-top: 0 auto;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player-details{
+        margin-left: 0px;
+    }
+    .bonous-part, .copa-america-tables{
+        flex-direction: column;
+        align-items: center;
+    }
+    .copa-america-table h2{
+        margin-left: 0px;
+    }
+    th{
+        height: 100%;
+    }
+    table{
+        width: 100%;
+    }
+    
+
+   
 }
