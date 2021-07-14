@@ -19,6 +19,10 @@ header{
     height: 677px;
     background-color: #2D25A0;
     margin-top: 10px;
+    opacity: 0.5;
+ }
+ .thumnail:hover{
+     opacity: 1;
  }
 .thumnail-parts{
     display: flex;
@@ -32,7 +36,12 @@ header{
     background-color: #E02C6D;
     padding: 10px 30px;
     color: white;
+    line-height: 80px;
     text-decoration: none;
+    transition: 1.5s;
+}
+.thumnail-part a:hover{
+    background-color: cornflowerblue;
 }
 .thumnail-part i{
     color: white;
@@ -46,6 +55,8 @@ header{
     width: 556px;
     height: 438px;
 }
+
+/* main part */
 main{
     display: flex;
     flex-direction: column;
@@ -62,7 +73,7 @@ main{
     margin-left: 150px;
     margin-right: 210px;
     margin-top: 70px;
-    margin-bottom: 165px;
+    margin-bottom: 160px;
 
 }
 .players{
@@ -137,13 +148,24 @@ footer{
     margin-top: 90px;
 }
 .details{
-    margin: 0px;
     text-align: center;
 }
 .details img{
     width: 483.87px;
     height: 110px;
 }
+.icons ul li{
+    list-style: none;
+    height: 32px;
+    width: 32px;
+    margin: 14px;
+    background: gray;
+    line-height: 32px;
+    border-radius: 15px;
+    display: inline-block;
+
+}
+
 
 
 
@@ -159,8 +181,8 @@ footer{
 
     }
     .thumnail-part{
-        margin-top: 0px;
         margin-left: 0px;
+        margin-right: 0px;
     }
     .thumnail-banner img{
         width: 100%;
@@ -173,7 +195,8 @@ footer{
         grid-template-columns: repeat(1, 1fr);
     }
     .player-details{
-        margin-left: 0px;
+        margin-left: 20px;
+        margin-right:2px;
     }
     .bonous-part, .copa-america-tables{
         flex-direction: column;
@@ -188,7 +211,40 @@ footer{
     table{
         width: 100%;
     }
-    
-
-   
+    .footer-details{
+        width: 100%;
+    }
+    .details img{
+        width: 80%;
+    }
 }
+
+
+/* tablet device */
+
+@media only screen and (min-width:688px) and 
+(max-width:992px) {
+    .thumnail, .players-templete, .form{
+        width: 100%;
+        height: 100%;
+    }
+    .thumnail-banner img{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player-details{
+        margin-left: 20px;
+        margin-right:2px;
+    }
+    th{
+        height: 100%;
+    }
+    table{
+        width: 100%;
+    }
+
+
+}
+    
